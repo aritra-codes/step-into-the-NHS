@@ -15,6 +15,10 @@ const ParallaxList = () => {
   const wantPageStartLayer = 1.5;
   const wantPageEndLayer = 9;
 
+  const HandleCloseButtonClick = () => {
+    document.querySelector<HTMLElement>(".info-div")!.style.display = "none";
+  };
+
   const returnStickyHeading = (
     stickyStart: number,
     stickyEnd: number,
@@ -576,6 +580,17 @@ const ParallaxList = () => {
 
   return (
     <>
+      <div className="info-div">
+        For an optimal experience, please use a desktop or laptop to view this
+        website and make sure the browser zoom is on 100%. Also, try not to use
+        a plugin that changes the colours of the website.
+        <button
+          type="button"
+          className="btn-close"
+          aria-label="Close"
+          onClick={HandleCloseButtonClick}
+        />
+      </div>
       <Parallax pages={98.35} className="parallax">
         <ParallaxLayer className="scroll-div" speed={0.75}>
           <h1>↕️ Scroll to progress ↕️</h1>

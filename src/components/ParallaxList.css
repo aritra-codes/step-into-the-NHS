@@ -28,6 +28,16 @@
   border-radius: 10px;
 }
 
+.info-div {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.info-div button {
+  margin-left: auto;
+}
+
 @keyframes ambulanceDrive {
   from {
     left: -25%;

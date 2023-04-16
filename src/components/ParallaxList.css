@@ -1,0 +1,49 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.text-layer h1 {
+  position: relative;
+  font-family: 'Teko', sans-serif;
+  font-size: 1000%;
+  line-height: 90%;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+}
+
+.info-div {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: aqua;
+}
+
+@keyframes ambulanceDrive {
+  from {
+    left: -25%;
+  }
+
+  to {
+    left: 125%;
+  }
+}
+
+.ambulance {
+  position: relative;
+  max-width: 25%;
+  bottom: -55%;
+  animation-name: ambulanceDrive;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}

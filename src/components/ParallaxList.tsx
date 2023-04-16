@@ -394,7 +394,7 @@ const ParallaxList = () => {
         {returnStickyHeading(
           pageStartLayer + 3,
           pageEndLayer,
-          "50%",
+          "60%",
           "400",
           "There are THREE ways to do so"
         )}
@@ -577,6 +577,9 @@ const ParallaxList = () => {
   return (
     <>
       <Parallax pages={98.35} className="parallax">
+        <ParallaxLayer className="scroll-div" speed={0.75}>
+          <h1>↕️ Scroll to progress ↕️</h1>
+        </ParallaxLayer>
         {returnCityPage(0, skyMorning)}
         {returnWantPage(1.5, 9)}
         {returnBecomePage(11, 15)}

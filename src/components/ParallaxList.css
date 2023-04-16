@@ -12,12 +12,20 @@
   color: white;
 }
 
-.info-div {
-  display: none;
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  background-color: aqua;
+.scroll-div {
+  z-index: 10;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.scroll-div h1 {
+  max-width: fit-content;
+  text-align: center;
+  margin-top: 10px;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
 }
 
 @keyframes ambulanceDrive {

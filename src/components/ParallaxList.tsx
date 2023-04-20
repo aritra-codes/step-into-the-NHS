@@ -572,7 +572,7 @@ const ParallaxList = () => {
           pageEndLayer,
           "40%",
           "400",
-          "I hope you learnt something new and most importantly, are willing to try out becoming a PARAMEDIC!!!"
+          "I hope you have learnt something new and are now willing to try out becoming a PARAMEDIC!!!"
         )}
       </>
     );
